@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'bookmarks.apps.BookmarksConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'bookmarks_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR),'Bookmarks','templates'],
+        'DIRS': [os.path.join(BASE_DIR,'bookmarks','templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
